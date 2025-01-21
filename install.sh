@@ -16,7 +16,7 @@ $(tput setaf 5)   ░▒▓██▓▒░  ░▒▓█▓▒░▒▓███
 }
 function forceStuffs {
     curl -O https://images.vistacloud.org/1/server-icon.png
-    echo "motd=Powered by VistaCloud | Change this motd in server.properties" >> server.properties
+    echo "motd=Powered by VelocityNode | Change this motd in server.properties" >> server.properties
 }
 
 function launchJavaServer {
@@ -45,7 +45,7 @@ if [ ! -f "$FILE" ]; then
             display
             sleep 2
                 echo "
- $(tput setaf 3)Which platform are you gonna use?
+ $(tput setaf 3)Which platform are you gonna use? (If you do not see the version you want listed. Please create a ticket and contact stxrlite to add it)
  1) Paper 1.8.8       6)  1.18.2 
  2) Paper 1.12.2      7)  1.19.2
  3) Paper 1.15.2
@@ -83,7 +83,7 @@ if [ ! -f "$FILE" ]; then
                                 launchJavaServer
                                 ;;
                             *) 
-                                echo "Error 404"
+                                echo "Invalid Choice"
                                 exit
                                 ;;
                             esac  
