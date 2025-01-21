@@ -92,7 +92,7 @@ if [ ! -f "$FILE" ]; then
             display
             sleep 2
                 echo "
- $(tput setaf 3)Which platform are you gonna use?
+ $(tput setaf 3)Which version you would like to use?
 1) 1.21
 2) 1.20.6
 3) 1.19.2
